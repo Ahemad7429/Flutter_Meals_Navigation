@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:meals_navigation/data/dummy_data.dart';
 import 'package:meals_navigation/models/models.dart';
 import 'package:meals_navigation/widgets/widgets.dart';
 
@@ -50,7 +49,6 @@ class _CategoryMealsScreenState extends State<CategoryMealsScreen> {
         itemCount: displayedMeals.length,
         itemBuilder: (ctx, index) {
           return MealItem(
-            removeMeal: removeMeal,
             id: displayedMeals[index].id,
             title: displayedMeals[index].title,
             imageUrl: displayedMeals[index].imageUrl,
